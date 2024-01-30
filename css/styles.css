@@ -1,38 +1,74 @@
-.navbar {
+body {
 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.header {
+
+    flex-direction: column;
     margin-left: 15%;
     margin-right: 15%;
 
-    padding: 10px;
+}
+
+.navbar {
+
+    display: flex;
+    /* bring separate contents to edges corresponding to the page */
+    justify-content: space-between; 
+    align-items: center;
+
+    margin-bottom: 100px;
+
+}
+
+.navbar .logo {
+
+    flex-shrink: 0;
 
 }
 
 .right-links ul {
 
     display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+    gap: 10px;
 
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    gap: 10px;
 
 }
 
-.header {
+.header-content {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header-content .left-box {
+
+    display: flex;
+    flex-direction: column;
+
+    /* since direction is column, align the primary axis and cross axis */
+    align-items: flex-start;
+
+}
+
+.header-content .right-box {
 
     display: flex;
     justify-content: center;
-    padding: 10px;
-
-    margin-left: 15%;
-    margin-right: 15%;
+    align-items: center;
 
 }
 
-.header img {
+.right-box img {
 
     width: 300px;
     height: auto;
